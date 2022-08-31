@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function sum(a,b) {
+  return a + b;
+}
+module.exports = sum;
+
+function sub(a1 , b1){
+  return a1 - b1;
+}
+module.exports = sub;
+
+
+function mul(x,y){
+  return x * y;
+}
+module.exports = mul;
+
+
+const div =(a2, b2)=>{
+  return a2/b2
+}
+module.exports = div;
+
+
+const floor =(x1, y1) =>{
+  return x1%y1
 }
 
-export default App;
+module.exports = floor;
